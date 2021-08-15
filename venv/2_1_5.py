@@ -8,7 +8,6 @@
 6. Выбрать radiobutton "Robots rule!".
 7. Нажать на кнопку Submit.
 '''
-
 import math
 from selenium import webdriver
 
