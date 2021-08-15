@@ -27,3 +27,5 @@ driver.find_element_by_css_selector('#robotCheckbox').click()
 #Выбраем radiobutton "Robots rule!" и нажимаем кнопку Submit
 driver.find_element_by_css_selector('#robotsRule').click()
 driver.find_element_by_css_selector('.btn-default').click()
+
+#test
