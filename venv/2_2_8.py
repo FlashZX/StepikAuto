@@ -16,6 +16,12 @@ driver.find_element_by_name('firstname').send_keys('Игорь')
 driver.find_element_by_name('lastname').send_keys('Насыров')
 driver.find_element_by_name('email').send_keys('flashikk@inbox.ru')
 
+''' 
+Можно создать файл средствами питона
+    with open("test.txt", "w") as file:
+        content = file.write("automationbypython")  # create test.txt file
+'''
+
 #Получаем путь к директории текущего исполняемого файла
 current_dir = os.path.abspath(os.path.dirname(__file__))
 file_path = os.path.join(current_dir, 'test.txt') #добавляем к этому пути имя файла
