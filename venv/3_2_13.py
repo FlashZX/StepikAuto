@@ -36,3 +36,13 @@ def input_values():
 # Указываем точку входа (скрипт запускается на прямую, а не вызван в качестве модуля)
 if __name__ == "__main__":
     unittest.main()
+
+''' Для вывода лога pytest в читаемом виде
+ -v --tb=line
+Подробнее об аргументах - https://gist.github.com/amatellanes/12136508b816469678c2
+
+Конструкция для проверки ожидаемого исключения
+with pytest.raises(NoSuchElementException):
+    browser.find_element_by_css_selector("button.btn")
+    pytest.fail("Не должно быть кнопки Отправить")
+'''
