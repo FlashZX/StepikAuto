@@ -21,5 +21,5 @@ def test_input_value_on_page(browser, links):
     browser.get(f'https://stepik.org/lesson/{links}/step/1')
     browser.find_element_by_css_selector(".ember-text-area").send_keys(time_cod())
     browser.find_element_by_css_selector(".submit-submission").click()
-    temp = browser.find_element_by_css_selector(".smart-hints__hint").text
-    assert temp == "Correct!", "А вот тут были инопланетяне!)"
+    answer = browser.find_element_by_css_selector(".smart-hints__hint").text
+    assert answer == "Correct!", "А вот тут были инопланетяне!)"
